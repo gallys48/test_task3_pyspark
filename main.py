@@ -25,4 +25,5 @@ def get_products_with_categories(
         col("category_name")
     )
 
-    return result
+    # Возвращаем результат без дубликатов
+    return result.distinct() 
